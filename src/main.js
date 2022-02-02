@@ -1,6 +1,6 @@
 import * as THREE from '../../lib/common/three.module.js';
 import {GUI} from '../../lib/common/dat.gui.module.js';
-import {Sky} from 'https://cdn.jsdelivr.net/npm/three@0.112.1/examples/jsm/objects/Sky.js';
+import {Sky} from '../../lib/112/Sky.js';
 import {game} from './game.js';
 import {graphics} from './graphics.js';
 import {math} from './math.js';

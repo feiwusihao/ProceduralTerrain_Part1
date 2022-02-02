@@ -1,7 +1,7 @@
 import 'https://cdn.jsdelivr.net/npm/simplex-noise@2.4.0/simplex-noise.js';
 //let module = import('https://cdn.jsdelivr.net/npm/noisejs@2.1.0/index.js');
 //import * as Noise from 'https://raw.githubusercontent.com/mikechambers/es6-perlin-module/master/perlin.js';
-import perlin from 'https://cdn.jsdelivr.net/gh/mikechambers/es6-perlin-module@master/perlin.js';
+import perlin from '../../lib/112/perlin.js';
 
 export const noise = (function() {
 
