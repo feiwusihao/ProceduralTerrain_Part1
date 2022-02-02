@@ -1,6 +1,6 @@
 import * as THREE from '../../lib/112/three.module.js';
 import Stats from '../../lib/common/stats.module.js';
-import {WEBGL} from 'https://cdn.jsdelivr.net/npm/three@0.112.1/examples/jsm/WebGL.js';
+import {WEBGL} from '../../lib/112/WebGL.js';
 
 
 export const graphics = (function() {
