@@ -1,4 +1,4 @@
-import * as THREE from '../../lib/common/three.module.js';
+import * as THREE from '../../lib/112/three.module.js';
 import {GUI} from '../../lib/common/dat.gui.module.js';
 import {Sky} from '../../lib/112/Sky.js';
 import {game} from './game.js';
