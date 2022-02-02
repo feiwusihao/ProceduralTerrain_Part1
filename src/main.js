@@ -1,5 +1,5 @@
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.112.1/build/three.module.js';
-import {GUI} from 'https://cdn.jsdelivr.net/npm/three@0.112.1/examples/jsm/libs/dat.gui.module.js';
+import * as THREE from '../../lib/common/three.module.js';
+import {GUI} from '../../lib/common/dat.gui.module.js';
 import {Sky} from 'https://cdn.jsdelivr.net/npm/three@0.112.1/examples/jsm/objects/Sky.js';
 import {game} from './game.js';
 import {graphics} from './graphics.js';
@@ -8,7 +8,7 @@ import {noise} from './noise.js';
 import {spline} from './spline.js';
 import {textures} from './textures.js';
 
-import {OrbitControls} from 'https://cdn.jsdelivr.net/npm/three@0.112.1/examples/jsm/controls/OrbitControls.js';
+import {OrbitControls} from '../../lib/common/OrbitControls.js';
 
 
 let _APP = null;
