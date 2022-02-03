@@ -209,38 +209,25 @@ class TerrainChunkManager {
       noiseType: 'simplex',
       seed: 1
     };
-
     const onNoiseChanged = () => {
       for (let k in this._chunks) {
         this._chunks[k].chunk.Rebuild();
       }
     };
-
     const noiseRollup = params.gui.addFolder('Terrain.Noise');
-    noiseRollup.add(params.guiParams.noise, "noiseType", ['simplex', 'perlin']).onChange(
-        onNoiseChanged);
-    noiseRollup.add(params.guiParams.noise, "scale", 64.0, 1024.0).onChange(
-        onNoiseChanged);
-    noiseRollup.add(params.guiParams.noise, "octaves", 1, 20, 1).onChange(
-        onNoiseChanged);
-    noiseRollup.add(params.guiParams.noise, "persistence", 0.01, 1.0).onChange(
-        onNoiseChanged);
-    noiseRollup.add(params.guiParams.noise, "lacunarity", 0.01, 4.0).onChange(
-        onNoiseChanged);
-    noiseRollup.add(params.guiParams.noise, "exponentiation", 0.1, 10.0).onChange(
-        onNoiseChanged);
-    noiseRollup.add(params.guiParams.noise, "height", 0, 256).onChange(
-        onNoiseChanged);
-
+    noiseRollup.add(params.guiParams.noise, "noiseType", ['simplex', 'perlin']).onChange( onNoiseChanged);
+    noiseRollup.add(params.guiParams.noise, "scale", 64.0, 1024.0).onChange(onNoiseChanged);
+    noiseRollup.add(params.guiParams.noise, "octaves", 1, 20, 1).onChange(onNoiseChanged);
+    noiseRollup.add(params.guiParams.noise, "persistence", 0.01, 1.0).onChange(onNoiseChanged);
+    noiseRollup.add(params.guiParams.noise, "lacunarity", 0.01, 4.0).onChange(onNoiseChanged);
+    noiseRollup.add(params.guiParams.noise, "exponentiation", 0.1, 10.0).onChange(onNoiseChanged);
+    noiseRollup.add(params.guiParams.noise, "height", 0, 256).onChange(onNoiseChanged);
     this._noise = new noise.Noise(params.guiParams.noise);
-
     params.guiParams.heightmap = {
       height: 16,
     };
-
     const heightmapRollup = params.gui.addFolder('Terrain.Heightmap');
-    heightmapRollup.add(params.guiParams.heightmap, "height", 0, 128).onChange(
-        onNoiseChanged);
+    heightmapRollup.add(params.guiParams.heightmap, "height", 0, 128).onChange(onNoiseChanged);
   }
 
   _InitTerrain(params) {
