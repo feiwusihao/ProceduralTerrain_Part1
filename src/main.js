@@ -426,8 +426,7 @@ class ProceduralTerrain_Demo extends game.Game {
   }
 
   _CreateControls() {
-    const controls = new OrbitControls(
-        this._graphics._camera, this._graphics._threejs.domElement);
+    const controls = new OrbitControls( this._graphics._camera, this._graphics._threejs.domElement);
     controls.target.set(0, 50, 0);
     controls.object.position.set(475, 345, 900);
     controls.update();
